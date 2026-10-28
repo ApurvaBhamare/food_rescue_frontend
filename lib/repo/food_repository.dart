@@ -102,8 +102,8 @@ class FoodRepository {
 
     final data = jsonDecode(response.body);
 
-    if (response.statusCode < 200 &&
-        response.statusCode >= 300 &&
+    if (response.statusCode >= 200 &&
+        response.statusCode < 300 &&
         data['success'] == true) {
       final List<dynamic> foodList = data['food'] as List<dynamic>;
 
