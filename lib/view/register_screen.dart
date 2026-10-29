@@ -114,7 +114,16 @@ class _RegisterScreenState extends State<RegisterScreen> {
                   const SizedBox(height: 25),
 
                   const Text(
-                    'Join the good food\nmovement!',
+                    'Join the good food',
+                    style: TextStyle(
+                      fontSize: 32,
+                      fontWeight: FontWeight.bold,
+                      height: 1.2,
+                      color: Color(0xFF203D2A),
+                    ),
+                  ),
+                  const Text(
+                    'movement!',
                     style: TextStyle(
                       fontSize: 32,
                       fontWeight: FontWeight.bold,
@@ -133,9 +142,9 @@ class _RegisterScreenState extends State<RegisterScreen> {
                     ),
                   ),
 
-                  const SizedBox(height: 28),
+              SizedBox(height: 28),
 
-                  const Text(
+             Text(
                     'I want to join as a',
                     style: TextStyle(
                       fontSize: 16,
@@ -143,8 +152,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
                     ),
                   ),
 
-                  const SizedBox(height: 12),
-
+                   SizedBox(height: 12),
                   Row(
                     children: [
                       Expanded(
@@ -154,7 +162,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
                           Icons.restaurant_rounded,
                         ),
                       ),
-                      const SizedBox(width: 12),
+                  SizedBox(width: 12),
                       Expanded(
                         child: roleCard(
                           'NGO',
@@ -165,29 +173,29 @@ class _RegisterScreenState extends State<RegisterScreen> {
                     ],
                   ),
 
-                  const SizedBox(height: 24),
+           SizedBox(height: 24),
 
-                  const Text(
+               Text(
                     'Your name',
                     style: TextStyle(fontWeight: FontWeight.w600),
                   ),
-                  const SizedBox(height: 8),
+           SizedBox(height: 8),
 
-                  TextField(
-                    controller: nameController,
-                    decoration: inputDecoration(
-                      'Enter your full name',
-                      Icons.person_outline,
-                    ),
-                  ),
+          TextField(
+  controller: nameController,
+  decoration: inputDecoration(
+    'Enter your full name',
+    Icons.person_outline,
+   
+  ),
+),
+               SizedBox(height: 18),
 
-                  const SizedBox(height: 18),
-
-                  const Text(
+            Text(
                     'Email address',
                     style: TextStyle(fontWeight: FontWeight.w600),
                   ),
-                  const SizedBox(height: 8),
+                 SizedBox(height: 8),
 
                   TextField(
                     controller: emailController,
@@ -357,15 +365,15 @@ class _RegisterScreenState extends State<RegisterScreen> {
         horizontal: 16,
       ),
       border: OutlineInputBorder(
-        borderRadius: BorderRadius.circular(15),
+        borderRadius: BorderRadius.circular(2),
         borderSide: const BorderSide(color: Colors.black12),
       ),
       enabledBorder: OutlineInputBorder(
-        borderRadius: BorderRadius.circular(15),
+        borderRadius: BorderRadius.circular(2),
         borderSide: const BorderSide(color: Colors.black12),
       ),
       focusedBorder: OutlineInputBorder(
-        borderRadius: BorderRadius.circular(15),
+        borderRadius: BorderRadius.circular(2),
         borderSide: const BorderSide(
           color: Color(0xFF34834A),
           width: 2,
